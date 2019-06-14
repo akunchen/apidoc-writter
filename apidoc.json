@@ -1,0 +1,16 @@
+{
+  "name": "项目api",
+  "version": "0.0.1",
+  "description": "项目api",
+  "title": "",
+  "url": "",
+  "sampleUrl": "",
+  "header": {
+    "title": "写在前面",
+    "filename": "./src/header.md"
+  },
+  "footer": {
+    "title": "总结",
+    "filename": "./src/footer.md"
+  }
+}
