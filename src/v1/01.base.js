@@ -34,3 +34,28 @@
  * @apiSuccessExample {json} 操作成功
  * {"code":0,"msg":"操作成功","data":{"expired":1560322418,"hash":"user/upload/2019/06/11/1560236018330.mp4","url":"/user/upload/2019/06/11/1560236018330.mp4","token":"DtOAwuutSGIkHGLB"},"success":true}
  */
+
+/**
+ * @api {post} /api/login 0201.登录
+ * @apiName UserLogin
+ * @apiVersion 0.0.1
+ * @apiParam {string} account 用户名
+ * @apiParam {string} password 密码
+ * @apiParam {number} terminal 平台，1-前台，2后台系统
+ * @apiGroup 01-base
+ * @apiSampleRequest /api/login
+ * @apiUse api_response
+ * @apiSuccess {json} data 数据字段
+ * @apiSuccess {string} data.departmentName 部门名称
+ * @apiSuccess {number} data.departmentId 部门id
+ * @apiSuccess {string} data.name 姓名
+ * @apiSuccess {string} data.description 描述
+ * @apiSuccess {number} data.terminal 平台
+ * @apiSuccess {number} data.userId 用户id
+ * @apiSuccess {string} data.token 登录token
+ * @apiSuccess {string} data.account 用户名
+ * @apiSuccess {string} data.avatar 头像
+ * @apiSuccess {boolean} data.loginBackend 能否登录后台
+ * @apiSuccessExample {json} 操作成功
+ * { "code": 0, "msg": "操作成功", "data": { "departmentName": null, "departmentId": 0, "name": "", "description": "", "terminal": 1, "userId": 5, "token": "ncxImWlUXCSJhzLCicFxXqfqCuBtmOnp","loginBackend":false }, "success": true }
+ */
