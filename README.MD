@@ -24,7 +24,7 @@ yarn add apidoc
 # 而且此时还会根据当前目录下的apidoc.json里的配置生成，详情可参看apidoc官方介绍
 ```
 - 基于上述逻辑，可以实现监听文件夹改动并实时编译的功能
-[dev/compile.js](https://github.com/akunchen/apidoc-writter/blob/master/dev/compile.js)
+[dev/compile.js](https://github.com/akunchen/apidoc-writter/blob/master/dev/complie.js)
 ```javascript
 var chokidar = require('chokidar');
 var shelljs = require('shelljs');
