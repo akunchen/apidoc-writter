@@ -24,7 +24,7 @@ yarn add apidoc
 # 而且此时还会根据当前目录下的apidoc.json里的配置生成，详情可参看apidoc官方介绍
 ```
 - 基于上述逻辑，可以实现监听文件夹改动并实时编译的功能
-[dev/compile.js](dev/compile.js)
+[dev/compile.js](https://github.com/akunchen/apidoc-writter/blob/master/dev/compile.js)
 ```javascript
 var chokidar = require('chokidar');
 var shelljs = require('shelljs');
@@ -42,7 +42,7 @@ shelljs.exec('npm run build');
 
 ### 启动web服务器
 接下来就是启动一个web服务器，用来访问编译后的html，而且需要根据文件变化，实时刷新，这里采用的`browser-sync`来实现
-[dev/dev-server.js](dev/dev-server.js)
+[dev/dev-server.js](https://github.com/akunchen/apidoc-writter/blob/master/dev/dev-server.js)
 ```javascript
 var path = require('path');
 var bs = require("browser-sync").create();
@@ -66,4 +66,6 @@ bs.init({
 bs.watch(serverPath, function () {
     bs.reload()
 });
+
+
 ```
