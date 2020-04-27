@@ -10,7 +10,7 @@
 - [apidoc](http://apidocjs.com/)，基于注释的api接口文档自动生成工具
 - [chokidar](https://github.com/paulmillr/chokidar) ，监听文件变化
 - [browser-sync](http://browsersync.io)，省时的浏览器同步测试工具
-- [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)，接口转发
+- [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)，接口转发，处理跨域
 
 ## 实现逻辑
 
